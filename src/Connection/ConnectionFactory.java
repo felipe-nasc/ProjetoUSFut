@@ -21,7 +21,7 @@ public class ConnectionFactory {
 
     public static Connection getConexao() {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbusfut", "root", "Felipe@1997");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdusfut", "root", "");
             System.out.println("conectado com sucesso!");
             return connection;
         } catch (SQLException e) {
