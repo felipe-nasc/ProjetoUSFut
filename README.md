@@ -5,10 +5,14 @@
 
 O projeto USFut tem com objetivo controlar o agendamento e utilização da quadra de futebol da universidade através de um software em java.
 
+
+
 ### Autor: 
 _____________________________________________________________________
 
 Felipe Nascimento Cruz
+
+
 
 ### Informações Adicionais
 _____________________________________________________________________
@@ -16,6 +20,8 @@ _____________________________________________________________________
 - Instituição Universidade São Francisco
 - Curso de Analise e Desenvolvimento de Software
 - Professor Orientador José Matias Lemes Filho
+
+
 
 ### Objetivo
 _____________________________________________________________________
@@ -26,6 +32,7 @@ através de um software desenvolvido em java onde
 os usuários devem realizar o login em sua conta
 para realizar o agendamento prévio informando a
 data e horário que desejam realizar o agendamento.
+
 
 
 ### Tecnologias	
@@ -40,10 +47,14 @@ https://netbeans.org/downloads/old/8.2/
 
 https://www.mysql.com/downloads/
 
-### Interface
 
+
+### Interface
+____________________________________________________________________
 ![interface1]( https://github.com/felipe-nasc/ProjetoUSFut/blob/master/interface1.png)
 ![interface2]( https://github.com/felipe-nasc/ProjetoUSFut/blob/master/interface2.png)
 
+
+____________________________________________________________________
 
 # OBRIGADO!!!
