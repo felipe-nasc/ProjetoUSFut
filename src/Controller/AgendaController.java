@@ -42,14 +42,12 @@ public class AgendaController {
         Agendamento agendamento = helper.obterModelo();
         
         //Salvar no banco de dados
-        AgendamentoDAO agendamentoDAO = new AgendamentoDAO();
-        agendamentoDAO.insert(agendamento);
+       // AgendamentoDAO agendamentoDAO = new AgendamentoDAO();
+        new AgendamentoDAO().insert(agendamento);
         
         //atualizar Tabela
         atualizaTabela();
-        
         helper.limparTela();
-       
   
     }
       public void navegarParaMenuPrincipal(){

@@ -66,10 +66,7 @@ public class Reserva extends javax.swing.JFrame {
 
         TableAgendamentos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"1", "09/11/2020", "08:00", "Felipe"},
-                {"2","09/11/2020", "09:00", "Time da USF"},
-                {"3","09/11/2020", "10:00", "Falta confirmar"},
-                {"4","09/11/2020", "11:00", null}
+                {"1", "05/12/2020", "08:00", "Felipe"}
             },
             new String [] {
                 "Id", "Data", "Hora", "Observação"
@@ -77,11 +74,14 @@ public class Reserva extends javax.swing.JFrame {
         ));
         TableAgendamentos.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
         jScrollPane1.setViewportView(TableAgendamentos);
+        if (TableAgendamentos.getColumnModel().getColumnCount() > 0) {
+            TableAgendamentos.getColumnModel().getColumn(3).setPreferredWidth(300);
+        }
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 530, 130));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 530, 130));
 
         LabelAgendaFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/fundoreserva.jpeg"))); // NOI18N
-        getContentPane().add(LabelAgendaFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
+        getContentPane().add(LabelAgendaFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -60, 830, 730));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

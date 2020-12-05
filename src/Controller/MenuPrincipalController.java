@@ -21,6 +21,8 @@ public class MenuPrincipalController {
         this.view = view;
     }
     
+    /**
+     */
     public void navegarParaAgenda(){
         
         Agenda agenda = new Agenda();

@@ -7,7 +7,6 @@ package View;
 
 import Controller.LoginController;
 import Model.DAO.Banco;
-import Model.utilitario;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -25,8 +24,6 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        utilitario u = new utilitario();
-        u.InserirIcone(this);
         controller = new LoginController(this);
         Banco.inicia();
   
@@ -49,7 +46,6 @@ public class Login extends javax.swing.JFrame {
         TextSenha = new javax.swing.JPasswordField();
         ButtonEntrar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        ButtonEntrar1 = new javax.swing.JButton();
         FundoBranco = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -95,17 +91,6 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/Logo.PNG"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 580, -1));
 
-        ButtonEntrar1.setBackground(new java.awt.Color(102, 153, 255));
-        ButtonEntrar1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        ButtonEntrar1.setText("Cadastrar-se");
-        ButtonEntrar1.setActionCommand("ButtonEntrar");
-        ButtonEntrar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonEntrar1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(ButtonEntrar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 600, 400, 50));
-
         FundoBranco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/FundoBranco.png"))); // NOI18N
         getContentPane().add(FundoBranco, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 670, 660));
 
@@ -123,10 +108,6 @@ public class Login extends javax.swing.JFrame {
     private void TextSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextSenhaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TextSenhaActionPerformed
-
-    private void ButtonEntrar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonEntrar1ActionPerformed
-       // controller.cadastrar();
-    }//GEN-LAST:event_ButtonEntrar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,7 +146,6 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonEntrar;
-    private javax.swing.JButton ButtonEntrar1;
     private javax.swing.JLabel FundoBranco;
     private javax.swing.JLabel LabelSenha;
     private javax.swing.JLabel LabelTituloLogin;

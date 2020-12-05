@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Felipe Cruz
+ * @author FelipeCruz
  */
 public class ReservaController {
 
@@ -25,17 +25,17 @@ public class ReservaController {
         this.view = view;
         this.helper = new ReservaHelper(view);
     }
-    /*
+   
     public void atualizaTabela(){
     
-        //Buscar Lista com agendamentos do banco de dados
+       // Buscar Lista com agendamentos do banco de dados
         AgendamentoDAO agendamentoDAO = new AgendamentoDAO();
         ArrayList<Agendamento> agendamentos = agendamentoDAO.selectAll();//depurar aqui
         
         //Exibir essa lista na view
-        helper.preencherTabela(agendamentos);
+       // helper.preencherTabela(agendamentos);
     }
-    */
+    
    public void navegarParaMenuPrincipal(){
         
         MenuPrincipal menuprincipal = new MenuPrincipal();

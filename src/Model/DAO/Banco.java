@@ -28,21 +28,20 @@ public class Banco {
         
         //criando elementos
         
-        Usuario usuario1 = new Usuario(1, "adm", 'M', "11999998888", "123456789", "admin", "administrador");
+        Usuario usuario1 = new Usuario(1, "admin", 'M', "11999998888", "123456789", "admin", "administrador");
         Usuario usuario2 = new Usuario(2, "felipe", 'M',  "11988880000", "987654321", "felipe", "administrador");
          
-       
-       
-        //Agendamento agendamento = new Agendamento(0, "data hh:mm");
-        Agendamento agendamento = new Agendamento (0,"Teste");
-        
-        //Adiciona Elementos na lista
+       //Adiciona Elementos na lista
         usuario.add(usuario1);
         usuario.add(usuario2);
+       
+        //Agendamento agendamento = new Agendamento(0, "data hh:mm");
         
-        //Adiciona Elementos na lista
+        
+        Agendamento agendamento1 = new Agendamento (0,"20/11/2020 13:00", "Teste");
+          //Adiciona Elementos na lista
     
-       // agendamento.add(agendamento1);
+        agendamento.add(agendamento1);
         
     }
     

@@ -6,7 +6,6 @@
 package View;
 
 import Controller.MenuPrincipalController;
-import Model.utilitario;
 
 /**
  *
@@ -22,8 +21,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     public MenuPrincipal() {
         initComponents();
         controller = new MenuPrincipalController(this);
-        utilitario u = new utilitario();
-        u.InserirIcone(this);
     }
 
     /**
@@ -74,7 +71,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 130, 60));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 140, 130, 60));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("Minhas Reservas");

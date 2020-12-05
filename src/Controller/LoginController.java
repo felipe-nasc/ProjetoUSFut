@@ -19,8 +19,8 @@ import java.sql.Connection;
  */
 public class LoginController {
     
-    private Login view;
-    private LoginHelper helper;
+    private final Login view;
+    private final LoginHelper helper;
 
     public LoginController(Login view) {
         this.view = view;

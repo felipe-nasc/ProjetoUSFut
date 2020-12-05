@@ -45,6 +45,11 @@ public class AgendaHelper implements IHelper{
         
     }
     
+    /**
+     *
+     * @return 
+     */
+    
     @Override
     public Agendamento obterModelo() {
         
@@ -55,14 +60,17 @@ public class AgendaHelper implements IHelper{
         String dataHora = data + " " + hora;
         String observacao = view.getTextObservacao().getText();
         
-        Agendamento agendamento = new Agendamento(id, data, observacao);
+        Agendamento agendamento = new Agendamento(id, dataHora, observacao);
         return agendamento;
         
     }
 
+    /**
+     *
+     */
     @Override
     public void limparTela() {
-        view.getTextId().setText("0");
+        view.getTextId().setText("");
         view.getTextFormatedData().setText("");
         view.getTextFormatedHora().setText("");
         view.getTextObservacao().setText("");
