@@ -7,3 +7,33 @@ O projeto USFut tem com objetivo controlar o agendamento e utilização da quadr
 ### Autor: 
 
 Felipe Nascimento Cruz
+
+### Informações Adicionais
+
+- Instituição Universidade São Francisco
+- Disciplina Pratica Profissional de Software
+- Curso de Analise e Desenvolvimento de Software
+- Professor Orientador José Matias Lemes Filho
+
+###Objetivo
+
+O projeto "USFut" tem com objetivo controlar a 
+utilização da quadra de futebol do proprietario
+através de um software desenvolvido em java onde
+os usuários devem realizar o login em sua conta
+para realizar o agendamento prévio informando a
+data e horário que desejam realizar o agendamento.
+
+
+###Tecnologias	
+_____________________________________________________________________
+
+- Linguagem Java
+- Ambiente de Desenvolvimento Netbeans
+
+https://netbeans.org/downloads/old/8.2/
+
+- Banco de Dados Mysql
+
+https://www.mysql.com/downloads/
+
